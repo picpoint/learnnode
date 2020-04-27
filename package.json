@@ -10,10 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autocannon": "^4.6.0",    
     "express": "^4.17.1"
   },
   "devDependencies": {
     "ejs": "^3.1.2",
-    "nodemon": "^2.0.3"
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "^4.0.1",
+    "nodemon": "^2.0.3",
+    "smart-grid": "^2.1.2",
+    "browser-sync": "^2.26.7"
   }
 }
