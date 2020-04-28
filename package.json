@@ -1,7 +1,7 @@
 {
   "name": "01_express",
   "version": "1.0.0",
-  "description": "",
+  "description": "learn nodejs and write test site",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
