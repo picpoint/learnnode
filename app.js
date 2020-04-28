@@ -1,13 +1,16 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.port || 4000;
 
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 
 
 
 
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {  
   res.render('index.ejs');
 });
 
