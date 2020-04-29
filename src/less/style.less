@@ -1,5 +1,5 @@
 @import "smart-grid.less";
-
+@import "var.less";
 
 .reset();
 
@@ -12,5 +12,43 @@
 
 
 .wrp {
-  border: 1px solid green;  
+  //border: @border;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/pict/bg.jpg");  
+  //background-color: @backgroundcolor;
+    &__menu {
+      border: @border;
+      display: flex;      
+      height: 70px;
+      width: 80%;
+    }
+    &__logo {
+      border: @border;
+      display: flex;      
+      width: 50%;
+      img {
+        height: 100%;
+        margin-left: 20px;
+      }
+    }
+    &__list {
+      //border: @border;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%;      
+      a {
+        color: @colortext;
+        text-decoration: none;
+        font-weight: bold;
+        transition: @transition;
+        &:hover {
+          color: @colortextactive;
+          text-decoration: underline;
+          transition: @transition;
+        }
+      }
+    }
 }

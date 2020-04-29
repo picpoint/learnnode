@@ -99,5 +99,40 @@ img {
   box-sizing: border-box;
 }
 .wrp {
-  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("/pict/bg.jpg");
+}
+.wrp__menu {
+  border: 1px solid red;
+  display: flex;
+  height: 70px;
+  width: 80%;
+}
+.wrp__logo {
+  border: 1px solid red;
+  display: flex;
+  width: 50%;
+}
+.wrp__logo img {
+  height: 100%;
+  margin-left: 20px;
+}
+.wrp__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.wrp__list a {
+  color: #7cdcfe;
+  text-decoration: none;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+.wrp__list a:hover {
+  color: #d7ba7d;
+  text-decoration: underline;
+  transition: ease-in-out 0.5s;
 }
