@@ -63,7 +63,7 @@ gulp.task('less', () => {
 
 
 gulp.task('htmlminindex', () => {
-  return gulp.src('./src/index.ejs')
+  return gulp.src('./src/pages/*.ejs')
   //.pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest('./views'))
   .pipe(browserSync.reload({
@@ -88,7 +88,7 @@ gulp.task('grid', () => {
 
 gulp.task('watch', ['less', 'htmlminindex', 'js', 'browserSync'], () => {
   gulp.watch('./src/less/style.less', ['less']);  
-  gulp.watch('./src/index.ejs', ['htmlminindex']);
+  gulp.watch('./src/pages/*.ejs', ['htmlminindex']);
   gulp.watch('./src/js', ['js']);
 });
 
