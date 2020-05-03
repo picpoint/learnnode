@@ -95,20 +95,18 @@ img {
   max-width: 100%;
   height: auto;
 }
-.body {
-  box-sizing: border-box;
-}
 .wrp {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-image: url("/pict/bg.jpg");
 }
 .wrp__menu {
   border: 1px solid red;
   display: flex;
-  height: 70px;
-  width: 80%;
+  height: 7%;
+  width: 60%;
 }
 .wrp__logo {
   border: 1px solid red;
@@ -135,4 +133,83 @@ img {
   color: #d7ba7d;
   text-decoration: underline;
   transition: ease-in-out 0.5s;
+}
+.wrp__list input {
+  height: 35%;
+  width: 50%;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.wrp__gpage {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  height: 93%;
+  width: 100%;
+}
+.wrp__gcontent {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.wrp__gcontent img {
+  border-radius: 23px;
+  width: 90%;
+}
+.wrp__gentry {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.wrp__forminput {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 50px 0;
+  background-color: #1e1e1e;
+  border-radius: 7px;
+}
+.wrp__fieldsinput {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.wrp__fieldsinput input {
+  width: 50%;
+  height: 25px;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.wrp__btnsinput {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.wrp__btnsinput button {
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.wrp__btnsinput a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.wrp__formlogin {
+  border: 1px solid red;
+  display: flex;
+  width: 80%;
+  margin: 50px 0;
 }

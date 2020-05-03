@@ -4,25 +4,20 @@
 .reset();
 
 
-.body {
-	box-sizing: border-box;
-}
-
-
-
 
 .wrp {
-  //border: @border;
+  //border: @border;  
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   background-image: url("/pict/bg.jpg");  
   //background-color: @backgroundcolor;
     &__menu {
       border: @border;
       display: flex;      
-      height: 70px;
-      width: 80%;
+      height: 7%;
+      width: 60%;
     }
     &__logo {
       border: @border;
@@ -50,5 +45,89 @@
           transition: @transition;
         }
       }
+      input {
+        height: 35%;
+        width: 50%;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
     }
+
+    &__gpage {
+      border: @border;
+      display: flex;
+      justify-content: center;
+      height: 93%;
+      width: 100%;
+    }
+    &__gcontent {
+      border: @border;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      img {
+        border-radius: 23px;
+        width: 90%;
+      }
+    }
+    &__gentry {
+      border: @border;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+    }
+    &__forminput {
+      border: @border;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 50px 0;
+      background-color: @backgroundcolor;
+      border-radius: 7px;
+    }
+    &__fieldsinput {
+      border: @border;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 50%;
+        height: 25px;
+        margin: 15px 0;
+        border-radius: 5px;
+        padding-left: 10px;
+      }
+    }
+    &__btnsinput {
+      border: @border;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      button {
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+    }
+    &__formlogin {
+      border: @border;
+      display: flex;
+      width: 80%;
+      margin: 50px 0;
+    }
+
+
+
+
 }
