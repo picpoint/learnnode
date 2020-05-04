@@ -29,18 +29,24 @@
       </div>
       <div class="wrp__gentry">
         
-        <div class="wrp__forminput">
-          <div class="wrp__fieldsinput">
-            <input type="text" name="login" placeholder="login">
-            <input type="password" name="password" placeholder="password">
-          </div>
-          <div class="wrp__btnsinput">
-            <button>Enter</button>
-            <a href="">Forgot password?</a>
-          </div>
+        <div class="wrp__formlogin">
+          <form action="input.js" method="POST">
+            <div class="wrp__fieldsinput">
+              <input type="text" name="login" placeholder="login">
+              <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="wrp__btnsinput">
+              <button>Enter</button>
+              <a href="">Forgot password?</a>
+            </div>
+          </form>          
         </div>
 
-        <div class="wrp__formlogin">login</div>        
+        <div class="wrp__formreg">
+          <form action="registration.js" method="POST">
+            <input type="text" name="name">
+          </form>
+        </div>        
       </div>
     </div>
 

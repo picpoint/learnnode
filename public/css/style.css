@@ -103,13 +103,11 @@ img {
   background-image: url("/pict/bg.jpg");
 }
 .wrp__menu {
-  border: 1px solid red;
   display: flex;
   height: 7%;
   width: 60%;
 }
 .wrp__logo {
-  border: 1px solid red;
   display: flex;
   width: 50%;
 }
@@ -141,14 +139,12 @@ img {
   padding-left: 10px;
 }
 .wrp__gpage {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   height: 93%;
   width: 100%;
 }
 .wrp__gcontent {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,15 +155,13 @@ img {
   width: 90%;
 }
 .wrp__gentry {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 30%;
 }
-.wrp__forminput {
-  border: 1px solid red;
+.wrp__formlogin {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -176,7 +170,6 @@ img {
   border-radius: 7px;
 }
 .wrp__fieldsinput {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -190,7 +183,6 @@ img {
   padding-left: 10px;
 }
 .wrp__btnsinput {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +199,7 @@ img {
   text-decoration: none;
   margin-left: 10px;
 }
-.wrp__formlogin {
+.wrp__formreg {
   border: 1px solid red;
   display: flex;
   width: 80%;
