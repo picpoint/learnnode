@@ -109,10 +109,11 @@ img {
 }
 .wrp__logo {
   display: flex;
+  align-items: center;
   width: 50%;
 }
 .wrp__logo img {
-  height: 100%;
+  height: 80%;
   margin-left: 20px;
 }
 .wrp__list {
@@ -166,7 +167,7 @@ img {
   flex-direction: column;
   width: 80%;
   margin: 50px 0;
-  background-color: #1e1e1e;
+  background-color: #5e5d59;
   border-radius: 7px;
 }
 .wrp__fieldsinput {
@@ -174,6 +175,7 @@ img {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 30px 0 0 0;
 }
 .wrp__fieldsinput input {
   width: 50%;
@@ -186,22 +188,57 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 0 30px 10px;
 }
 .wrp__btnsinput button {
   width: 80px;
   height: 30px;
   border-radius: 5px;
   margin-right: 10px;
+  background-color: #3876be;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 .wrp__btnsinput a {
   color: white;
   text-decoration: none;
-  margin-left: 10px;
 }
 .wrp__formreg {
-  border: 1px solid red;
   display: flex;
+  justify-content: center;
+  border-radius: 7px;
   width: 80%;
   margin: 50px 0;
+  background-color: #5e5d59;
+}
+.wrp__formreg form {
+  width: 100%;
+}
+.wrp__regfields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrp__regfields input {
+  width: 50%;
+  height: 25px;
+  margin: 15px 0;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.wrp__regfields input:nth-child(1) {
+  margin-top: 30px;
+}
+.wrp__regfields button {
+  margin: 30px 0;
+  width: 50%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #5fb053;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
 }

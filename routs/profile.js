@@ -3,8 +3,8 @@ const router = Router();
 
 
 router.get('/', (req, res) => {
-	res.render('forum.ejs', {
-			title: 'Forum'
+	res.render('profile.ejs', {
+			title: 'Pinpoint'
 	});
 });
 	

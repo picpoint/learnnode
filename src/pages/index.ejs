@@ -12,13 +12,9 @@
     
     <div class="wrp__menu">      
       <div class="wrp__logo">
-        <img src="pict/logo.png" alt="logo">
+        <img src="pict/pp2.png" alt="logo">
       </div>
-      <div class="wrp__list">
-        <!-- <a href="/blog">Blog</a>
-        <a href="/forum">Forum</a>
-        <a href="/contacts">Contacts</a>
-        <a href="/about">About</a> -->
+      <div class="wrp__list">        
         <input type="text" name="find" id="find" placeholder="Поиск">
       </div>
     </div>
@@ -30,7 +26,7 @@
       <div class="wrp__gentry">
         
         <div class="wrp__formlogin">
-          <form action="input.js" method="POST">
+          <form method="POST">
             <div class="wrp__fieldsinput">
               <input type="text" name="login" placeholder="login">
               <input type="password" name="password" placeholder="password">
@@ -43,8 +39,14 @@
         </div>
 
         <div class="wrp__formreg">
-          <form action="registration.js" method="POST">
-            <input type="text" name="name">
+          <form method="POST">
+            <div class="wrp__regfields">
+              <input type="text" name="regfirstname" placeholder="firstname">
+              <input type="text" name="reglastname" placeholder="lastname">
+              <input type="text" name="reglogin" placeholder="login">
+              <input type="password" name="regpass" placeholder="password">
+              <button>registration</button>
+            </div>
           </form>
         </div>        
       </div>
@@ -55,7 +57,6 @@
 
   </section>
   
-
- <script src="js/test.js"></script> 
+ 
 </body>
 </html>

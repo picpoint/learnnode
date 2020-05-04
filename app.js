@@ -3,21 +3,21 @@ const path = require('path');
 const app = express();
 const port = process.env.port || 4000;
 const indexRout = require('./routs/index');
-const blogRout = require('./routs/blog');
-const forumRout = require('./routs/forum');
-const contactsRout = require('./routs/contacts');
-const aboutRout = require('./routs/about');
+const profileRout = require('./routs/profile');
+const bodyParser = require('body-parser');
+const urlMongooseDB = 'mongodb+srv://rmtar:rmtar@cluster0-3kzjk.mongodb.net/test?retryWrites=true&w=majority';
 
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({extended: true}));
+//app.use(express.urlencoded({extended: true}));
+
 
 
 app.use('/', indexRout);
-app.use('/blog', blogRout);
-app.use('/forum', forumRout);
-app.use('/contacts', contactsRout);
-app.use('/about', aboutRout);
+app.use('/profile', profileRout);
+
 
 
 
