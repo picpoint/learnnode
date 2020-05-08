@@ -5,6 +5,7 @@ const port = process.env.port || 4000;
 const indexRout = require('./routs/index');
 const profileRout = require('./routs/profile');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 const urlMongooseDB = 'mongodb+srv://rmtar:rmtar@cluster0-3kzjk.mongodb.net/test?retryWrites=true&w=majority';
 
 
