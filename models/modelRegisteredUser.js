@@ -16,9 +16,13 @@ const registration = new Schema({
   regpass: {
     type: String,
     required: true
+  },
+  date_of_registration: {
+    type: Date,
+    default: Date.now
   }
 
 });
 
 
-module.exports = model('user', registration);
+module.exports = model('registered_user', registration);
