@@ -9,6 +9,10 @@ const registration = new Schema({
     type: String,
     required: true
   },
+  regemail: {
+    type: String,
+    required: true
+  },
   reglogin: {
     type: String,
     required: true

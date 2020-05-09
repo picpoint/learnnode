@@ -21,7 +21,11 @@ app.use('/profile', profileRout);
 
 async function start() {
   try {
-    await mongoose.connect(urlMongooseDB, {useNewUrlParser: true});
+    await mongoose.connect(urlMongooseDB, {
+      useNewUrlParser: true,
+      useFindAndModify: false,
+      useUnifiedTopology: true
+    });
 
     app.listen(port, () => {
       console.log(`server start on port ${port}`);  

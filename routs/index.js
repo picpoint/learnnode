@@ -4,8 +4,12 @@ const registeredUser = require('../models/modelRegisteredUser');
 
 
 router.get('/', (req, res) => {  
+  const onRegUsers = registeredUser.findOne({reglogin: "rmtar"});
+  console.log(onRegUsers);
+
+
 	res.render('index.ejs', {
-		title: 'Главная страница'
+    title: 'Главная страница'    
   });    
 });
 
@@ -16,6 +20,7 @@ router.post('/', (req, res) => {
   const usrReg = new registeredUser({
     regfirstname: req.body.regfirstname, 
     reglastname: req.body.reglastname, 
+    regemail: req.body.regemail,
     reglogin: req.body.reglogin, 
     regpass: req.body.regpass
   });
