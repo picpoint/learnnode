@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.port || 4000;
 const indexRout = require('./routs/index');
 const profileRout = require('./routs/profile');
+const errRout = require('./routs/err');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const urlMongooseDB = 'mongodb+srv://rmtar:rmtar@cluster0-3kzjk.mongodb.net/ppdb?retryWrites=true&w=majority';
@@ -17,6 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use('/', indexRout);
 app.use('/profile', profileRout);
+app.use('/err', errRout);
 
 
 async function start() {

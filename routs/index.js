@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 
 
 router.post('/', (req, res) => {
-  console.log(req.body);  
+  //console.log(req.body);    
   
   const usrReg = new registeredUser({
     regfirstname: req.body.regfirstname, 
@@ -20,13 +20,21 @@ router.post('/', (req, res) => {
     reglogin: req.body.reglogin, 
     regpass: req.body.regpass
   });
+
+  const candidate = registeredUser.find({reglogin: 1});
+  //console.log(candidate);
   
   try {
-    usrReg.save();
-    res.redirect('/');  
+    if(candidate != req.body.reglogin) {
+      usrReg.save();
+      res.redirect('/');  
+    } else {
+      res.render('err');
+    }   
   } catch(e) {
     console.log(e.message);
   }  
+
 });
 
 
