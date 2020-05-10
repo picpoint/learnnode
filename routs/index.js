@@ -21,19 +21,28 @@ router.post('/', (req, res) => {
     regpass: req.body.regpass
   });
 
-  const candidate = registeredUser.find({reglogin: 1});
-  //console.log(candidate);
-  
-  try {
-    if(candidate != req.body.reglogin) {
-      usrReg.save();
-      res.redirect('/');  
-    } else {
-      res.render('err');
-    }   
+
+  try {    
+    usrReg.save();
+    res.redirect('/');      
   } catch(e) {
     console.log(e.message);
   }  
+
+
+  //const candidate = registeredUser.find({reglogin: 1});
+  //console.log(candidate);
+  
+  // try {
+  //   if(candidate != req.body.reglogin) {
+  //     usrReg.save();
+  //     res.redirect('/');  
+  //   } else {
+  //     res.render('err');
+  //   }   
+  // } catch(e) {
+  //   console.log(e.message);
+  // }  
 
 });
 

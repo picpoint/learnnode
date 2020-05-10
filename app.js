@@ -7,6 +7,7 @@ const profileRout = require('./routs/profile');
 const errRout = require('./routs/err');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const modelRegisteredUser = require('./models/modelRegisteredUser');
 const urlMongooseDB = 'mongodb+srv://rmtar:rmtar@cluster0-3kzjk.mongodb.net/ppdb?retryWrites=true&w=majority';
 
 
@@ -28,6 +29,13 @@ async function start() {
       useFindAndModify: false,
       useUnifiedTopology: true
     });
+
+    const candidate = await modelRegisteredUser.find({reglogin: 1});
+
+    // if(candidate != reglogin) {
+
+    // }
+
 
     app.listen(port, () => {
       console.log(`server start on port ${port}`);  
