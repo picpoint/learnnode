@@ -3,13 +3,9 @@ const router = Router();
 const registeredUser = require('../models/modelRegisteredUser');
 
 
-router.get('/', (req, res) => {  
-  const onRegUsers = registeredUser.findOne({reglogin: "rmtar"});
-  console.log(onRegUsers);
-
-
+router.get('/', (req, res) => {    
 	res.render('index.ejs', {
-    title: 'Главная страница'    
+    title: 'Главная страница'
   });    
 });
 
