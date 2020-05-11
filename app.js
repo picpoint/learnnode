@@ -29,14 +29,6 @@ async function start() {
       useFindAndModify: false,
       useUnifiedTopology: true
     });
-
-    const candidate = await modelRegisteredUser.find({reglogin: 1});
-
-    // if(candidate != reglogin) {
-
-    // }
-
-
     app.listen(port, () => {
       console.log(`server start on port ${port}`);  
     });
