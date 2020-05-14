@@ -7,7 +7,11 @@ router.get('/', (req, res) => {
 			title: 'Pinpoint'
 	});
 });
-	
+  
+
+router.post('/', (req, res) => {
+  req.session.isAuthenticated = true;
+});
 
 
 module.exports = router;
