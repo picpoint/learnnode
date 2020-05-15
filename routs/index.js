@@ -20,8 +20,14 @@ router.post('/', (req, res) => {
   });
 
   try {    
-    usrReg.save();
-    res.redirect('/');      
+    const candidate = usrReg.findOne({reglogin});
+    if(candidate) {
+      res.render('err.ejs');
+    } else {
+      usrReg.save();
+      res.redirect('profile');      
+    }
+    
   } catch(e) {
     console.log(e.message);
   }    
