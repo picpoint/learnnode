@@ -1,0 +1,27 @@
+{
+  "name": "learnnode_njs_in_actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/picpoint/learnnode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/picpoint/learnnode/issues"
+  },
+  "homepage": "https://github.com/picpoint/learnnode#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.2",
+    "nodemon": "^2.0.4"
+  }
+}
