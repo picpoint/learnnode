@@ -1,2 +1,0 @@
-
-console.log('registration.js');
